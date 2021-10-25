@@ -1,0 +1,7 @@
+[13:38:47] init -> SDL initialized without errors
+[13:38:47] init -> Window created without errors
+[13:38:47] init -> Renderer created without errors
+[13:38:47] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[13:38:47] load_scene -> Loaded scene 'game-template' successfully!
+[13:38:48][Error] get_component -> Component type: "Flappy_Bord.main" doesn't exist in components.
+[13:38:48] stop -> Game cleaned

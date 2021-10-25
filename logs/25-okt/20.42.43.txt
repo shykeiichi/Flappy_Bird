@@ -1,0 +1,17 @@
+[20:42:43] init -> SDL initialized without errors
+[20:42:43] init -> Window created without errors
+[20:42:43] init -> Renderer created without errors
+[20:42:43] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[20:42:43] load_scene -> Loaded scene 'game-template' successfully!
+[20:42:43][Error] stop -> The given key '0' was not present in the dictionary. In System.Collections.Generic.Dictionary`2.get_Item(TKey key) in System.Private.CoreLib.dll:token 0x6006c8d+0x17
+The given key '0' was not present in the dictionary.
+Stacktrace: at System.Collections.Generic.Dictionary`2.get_Item(TKey key) in System.Private.CoreLib.dll:token 0x6006c8d+0x17
+at Fjord.Modules.Graphics.font_handler.get_texture(String text, String font_id, IntPtr& texture, Int32 x, Int32 y, Byte r, Byte g, Byte b, Byte a) in Fjord.dll:token 0x6000080+0x24
+at Fjord.Modules.Graphics.draw.text(Int32 x, Int32 y, String font, Int32 font_size, String text, Byte r, Byte g, Byte b, Byte a) in Fjord.dll:token 0x600007c+0x1
+at Flappy_Bord.main.render() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Program.cs:line 93
+at Fjord.Modules.Game.scene_handler.render() in Fjord.dll:token 0x600009b+0x22
+at Fjord.game.render() in Fjord.dll:token 0x6000008+0xc
+at Fjord.game.run(scene start_scene) in Fjord.dll:token 0x6000006+0xec
+Source: System.Private.CoreLib
+Targetsite: Void ThrowKeyNotFoundException[T](T)
+[20:42:43] stop -> Game cleaned

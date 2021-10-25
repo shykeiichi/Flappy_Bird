@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Flappy_Bord</id>
+    <version>1.0.0</version>
+    <authors>Flappy_Bord</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\bin\Debug\net6.0\Flappy_Bord.runtimeconfig.json" target="lib\net6.0\Flappy_Bord.runtimeconfig.json" />
+    <file src="E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\bin\Debug\net6.0\Flappy_Bord.dll" target="lib\net6.0\Flappy_Bord.dll" />
+  </files>
+</package>

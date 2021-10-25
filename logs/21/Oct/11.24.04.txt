@@ -1,0 +1,3 @@
+[11:24:04] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[11:24:04] load_scene -> Loaded scene 'game-template' successfully!
+[11:24:04] stop -> Game cleaned

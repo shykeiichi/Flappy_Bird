@@ -1,0 +1,7 @@
+[14:26:47] init -> SDL initialized without errors
+[14:26:47] init -> Window created without errors
+[14:26:47] init -> Renderer created without errors
+[14:26:47] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[14:26:47] load_scene -> Loaded scene 'game-template' successfully!
+[14:26:47][Error] stop -> Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index') In System.Collections.Generic.List`1.set_Item(Int32 index, T value) in System.Private.CoreLib.dll:token 0x6006d82+0x9
+[14:26:47] stop -> Game cleaned

@@ -1,0 +1,17 @@
+[11:48:04] init -> SDL initialized without errors
+[11:48:04] init -> Window created without errors
+[11:48:04] init -> Renderer created without errors
+[11:48:04] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[11:48:04] load_scene -> Loaded scene 'game-template' successfully!
+[11:48:04][Error] stop -> 'Flappy_Bord.bird_controller' does not contain a definition for 'position' In CallSite.Target(Closure , CallSite , Object )
+'Flappy_Bord.bird_controller' does not contain a definition for 'position'
+at CallSite.Target(Closure , CallSite , Object )
+at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0) in System.Linq.Expressions.dll:token 0x6001062+0x112
+at Flappy_Bord.bird_controller.update() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Bird_controller.cs:line 15
+at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid1[T0](CallSite site, T0 arg0) in System.Linq.Expressions.dll:token 0x6001076+0x108
+at Fjord.Modules.Game.entity.update() in Fjord.dll:token 0x600008f+0x56
+at Flappy_Bord.main.update() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Program.cs:line 34
+at Fjord.Modules.Game.scene_handler.update() in Fjord.dll:token 0x600009a+0x22
+at Fjord.game.update() in Fjord.dll:token 0x6000007+0x45
+at Fjord.game.run(scene start_scene) in Fjord.dll:token 0x6000006+0xd6
+[11:48:04] stop -> Game cleaned

@@ -1,0 +1,14 @@
+[12:19:09] init -> SDL initialized without errors
+[12:19:09] init -> Window created without errors
+[12:19:09] init -> Renderer created without errors
+[12:19:09] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[12:19:09] load_scene -> Loaded scene 'game-template' successfully!
+[12:19:09][Error] stop -> Object reference not set to an instance of an object. In Flappy_Bord.main.update() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Program.cs:line 51
+Object reference not set to an instance of an object.
+Stacktrace:    at Flappy_Bord.main.update() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Program.cs:line 51
+   at Fjord.Modules.Game.scene_handler.update() in Fjord.dll:token 0x600009a+0x22
+   at Fjord.game.update() in Fjord.dll:token 0x6000007+0x45
+   at Fjord.game.run(scene start_scene) in Fjord.dll:token 0x6000006+0xd6
+Source: Flappy_Bord
+Targetsite: Void update()
+[12:19:09] stop -> Game cleaned

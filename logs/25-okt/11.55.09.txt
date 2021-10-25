@@ -1,0 +1,15 @@
+[11:55:08] init -> SDL initialized without errors
+[11:55:08] init -> Window created without errors
+[11:55:08] init -> Renderer created without errors
+[11:55:08] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' aborting.
+[11:55:08] load_scene -> Loaded scene 'game-template' successfully!
+[11:55:08][Error] stop -> Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index') In System.Collections.Generic.List`1.set_Item(Int32 index, T value) in System.Private.CoreLib.dll:token 0x6006d82+0x9
+Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+Stacktrace:    at System.Collections.Generic.List`1.set_Item(Int32 index, T value) in System.Private.CoreLib.dll:token 0x6006d82+0x9
+   at Flappy_Bord.main.update() in E:\Projects\Coding\C#\Fjord_Projects\Flappy_Bord\Program.cs:line 44
+   at Fjord.Modules.Game.scene_handler.update() in Fjord.dll:token 0x600009a+0x22
+   at Fjord.game.update() in Fjord.dll:token 0x6000007+0x45
+   at Fjord.game.run(scene start_scene) in Fjord.dll:token 0x6000006+0xd6
+Source: System.Private.CoreLib
+Targetsite: Void ThrowArgumentOutOfRange_IndexException()
+[11:55:08] stop -> Game cleaned

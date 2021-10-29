@@ -1,4 +1,4 @@
 # Fjord_Flappy_Bird
 A Flappy Bird clone made in Fjord
 
-Made for Fjord version v1.0.9
+Made for Fjord version v1.1.0

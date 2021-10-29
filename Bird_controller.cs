@@ -4,6 +4,7 @@ using Fjord.Modules.Game;
 using Fjord.Modules.Graphics;
 using Fjord.Modules.Input;
 using Fjord.Modules.Mathf;
+using Fjord.Modules.Sound;
 
 namespace Flappy_Bord {
     class bird_controller : component {
@@ -27,6 +28,8 @@ namespace Flappy_Bord {
 
             if(input.get_key_just_pressed(input.key_space)) {
                 velocity = -200;
+
+                Sound.play_sound("jump");
             }
         }
 

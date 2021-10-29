@@ -5,6 +5,7 @@ using Fjord.Modules.Game;
 using Fjord.Modules.Graphics;
 using Fjord.Modules.Input;
 using Fjord.Modules.Mathf;
+using Fjord.Modules.Sound;
 using static SDL2.SDL;
 
 namespace Flappy_Bord {
@@ -34,7 +35,6 @@ namespace Flappy_Bord {
         IntPtr background = texture_handler.load_texture("background.png");
 
         public main() {
-
             uint f; int a;
             SDL_QueryTexture(pipe, out f, out a, out pipe_size.x, out pipe_size.y);
 
@@ -47,6 +47,10 @@ namespace Flappy_Bord {
 
         public override void on_load()
         {
+
+            Sound.load_sound("jump", "jump");
+            Sound.load_sound("die", "die");
+            Sound.load_sound("point", "point");
 
             // This is where you load all your scenes 
             // The if statement is so that it doesn't trigger multiple times
@@ -74,12 +78,14 @@ namespace Flappy_Bord {
                 if(!(player.get_component<Transform>().position.y < p[i].position.y + 30 && player.get_component<Transform>().position.y > p[i].position.y - 35)) {
                     if(p[i].position.x > 92 && p[i].position.x < 102) {
                         restart();
+                        Sound.play_sound("die");
                     }
                 } else {
                     if(p[i].position.x > 99 && p[i].position.x < 100) {
                         if(p[i].can_add_p) {
                             p[i].can_add_p = false;
                             points++;
+                            Sound.play_sound("point");
                         }
                     }
                 }
@@ -87,14 +93,19 @@ namespace Flappy_Bord {
                 p[i].position.x -= 4f * (float)game.delta_time;
                 if(p[i].position.x < 0 - pipe_size.x) {
                     p[i].position.x = 360;
+                    p[i].can_add_p = true;
                 }
 
                 if(points > high_score)
                     high_score = points;
             }
 
-            if(input.get_key_just_pressed(input.key_escape)) {
+            if(input.get_key_just_pressed(input.key_r)) {
                 restart();
+            }
+
+            if(input.get_key_just_pressed(input.key_escape)) {
+                game.stop();
             }
         }
 

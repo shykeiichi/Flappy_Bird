@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "R49vB/NI/nbCedSsxBXgFtJ5ahoofu4w6n4GLJpPK+MTps5iufpU8CJLu9jYWCi1qDctil/MSnr6FpIY7gzsMA==",
+  "dgSpecHash": "EZzp1Mzaguq3r7v0ltf4PxQnF9++6pSk5TxC92KWMmuTote5o/65WcGYV8GYF1VV3YLYyQ8d0xttbHtXAyRVaQ==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\Flappy_Bord.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wille\\.nuget\\packages\\fjord\\1.1.1\\fjord.1.1.1.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\websocketserver\\1.0.8\\websocketserver.1.0.8.nupkg.sha512",
+    "C:\\Users\\wille\\.nuget\\packages\\websocketsharp\\1.0.3-rc9\\websocketsharp.1.0.3-rc9.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'WebSocketSharp 1.0.3-rc9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "WebSocketSharp",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

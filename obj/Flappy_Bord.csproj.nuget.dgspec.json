@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\Flappy_Bord.csproj": {}
+    "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\Flappy_Bord.csproj": {
+    "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\Flappy_Bord.csproj",
+        "projectUniqueName": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj",
         "projectName": "Flappy_Bord",
-        "projectPath": "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\Flappy_Bord.csproj",
+        "projectPath": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj",
         "packagesPath": "C:\\Users\\wille\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Coding\\C#\\Fjord_Projects\\Flappy_Bord\\obj\\",
+        "outputPath": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wille\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Fjord": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.7.21379.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

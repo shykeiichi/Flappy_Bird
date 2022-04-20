@@ -11,7 +11,7 @@ namespace Flappy_Bord {
     class bird_controller : component {
 
         float velocity = 0;
-        float gravity = 0.8f;
+        float gravity = 1f;
         float max = 30f;
 
         public override void on_load()

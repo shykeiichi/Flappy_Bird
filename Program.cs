@@ -48,6 +48,7 @@ namespace Flappy_Bord {
 
         public override void on_load()
         {
+            game.MAX_FPS = 60;
             draw.load_font("Arcadia");
 
             Sound.load_sound("jump", "jump");

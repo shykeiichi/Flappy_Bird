@@ -1,0 +1,19 @@
+[09:49:10] init -> SDL initialized without errors
+[09:49:10] init -> Window created without errors
+[09:49:10] init -> Renderer created without errors
+[09:49:10] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' ignoring.
+[09:49:10] load_scene -> Loaded scene 'game-template' successfully!
+[09:49:11] run -> -- Update Error --
+[09:49:11] stop -> The given key 'jump' was not present in the dictionary. In System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+[09:49:11] stop -> 
+The given key 'jump' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Fjord.Modules.Sound.Sound.play_sound(String id)
+   at Flappy_Bord.bird_controller.update() in D:\Projects2022\Coding\C#\Fjord_projects\Flappy_Bird\Bird_controller.cs:line 33
+   at System.Dynamic.UpdateDelegates.UpdateAndExecuteVoid1[T0](CallSite site, T0 arg0)
+   at Fjord.Modules.Game.entity.update()
+   at Flappy_Bord.main.update() in D:\Projects2022\Coding\C#\Fjord_projects\Flappy_Bird\Program.cs:line 77
+   at Fjord.Modules.Game.scene_handler.update()
+   at Fjord.game.update()
+   at Fjord.game.run(scene start_scene, String title)
+[09:49:11] stop -> Game cleaned

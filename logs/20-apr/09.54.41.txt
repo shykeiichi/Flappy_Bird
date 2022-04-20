@@ -1,0 +1,14 @@
+[09:54:40] init -> SDL initialized without errors
+[09:54:40] init -> Window created without errors
+[09:54:41] init -> Renderer created without errors
+[09:54:41] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' ignoring.
+[09:54:41] load_scene -> -- OnLoad Error --
+[09:54:41] stop -> An item with the same key has already been added. Key: jump In System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+[09:54:41] stop -> 
+An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Fjord.Modules.Sound.Sound.load_sound(String path, String id)
+   at Flappy_Bord.main.on_load() in D:\Projects2022\Coding\C#\Fjord_projects\Flappy_Bird\Program.cs:line 53
+   at Fjord.Modules.Game.scene_handler.load_scene(String id)
+[09:54:41] stop -> Game cleaned

@@ -27,17 +27,17 @@ namespace Flappy_Bord {
         bird player = new bird();
 
         pipel[] p = new pipel[6];
-        IntPtr pipe = texture_handler.load_texture("pipe.png");
+
+        texture pipe = new texture("pipe.png");
         V2 pipe_size = new V2(0, 0);
         
         short points = 0;
         short high_score = 0;
 
-        IntPtr background = texture_handler.load_texture("background.png");
+        texture background = new texture("background.png");
 
         public main() {
-            uint f; int a;
-            SDL_QueryTexture(pipe, out f, out a, out pipe_size.x, out pipe_size.y);
+            pipe_size = pipe.get_size();
 
             Random rand = new Random();
 
@@ -48,6 +48,7 @@ namespace Flappy_Bord {
 
         public override void on_load()
         {
+            draw.load_font("Arcadia");
 
             Sound.load_sound("jump", "jump");
             Sound.load_sound("die", "die");
@@ -76,7 +77,7 @@ namespace Flappy_Bord {
             player.update();
 
             for(var i = 0; i < p.Length; i++) {
-                if(!(player.get_component<Transform>().position.y < p[i].position.y + 30 && player.get_component<Transform>().position.y > p[i].position.y - 35)) {
+                if(!(player.get<Transform>().position.y < p[i].position.y + 30 && player.get<Transform>().position.y > p[i].position.y - 35)) {
                     if(p[i].position.x > 92 && p[i].position.x < 102) {
                         restart();
                         Sound.play_sound("die");
@@ -108,6 +109,8 @@ namespace Flappy_Bord {
             if(input.get_key_just_pressed(input.key_escape)) {
                 game.stop();
             }
+
+            base.update();
         }
 
         // Render method
@@ -115,17 +118,21 @@ namespace Flappy_Bord {
 
         public override void render()
         {
-            draw.texture(background, 0, 0, 0);
+            draw.texture(new V2(0, 0), background);
 
             player.render();
 
             for(var i = 0; i < p.Length; i++) {
-                draw.texture_ext(pipe, (int)p[i].position.x, (int)p[i].position.y + 30, 0, 1, 1, false);
-                draw.texture_ext(pipe, (int)p[i].position.x, (int)p[i].position.y - 35 - pipe_size.y, 0, 1, 1, false, draw_origin.TOP_LEFT, flip_type.vertical);
+                pipe.set_fliptype(flip_type.none);
+                draw.texture(new V2((int)p[i].position.x, (int)p[i].position.y + 30), pipe);
+                pipe.set_fliptype(flip_type.vertical);
+                draw.texture(new V2((int)p[i].position.x, (int)p[i].position.y - 35 - pipe_size.y), pipe);
             } 
 
-            draw.text(10, 5, "default", 6, "Score: " + points.ToString());       
-            draw.text(10, 11, "default", 6, "High Score: " + high_score.ToString());        
+            draw.text(new V2(10, 5), "Arcadia", 6, "Score: " + points.ToString());       
+            draw.text(new V2(10, 11), "Arcadia", 6, "High Score: " + high_score.ToString());     
+
+            base.render();   
         }
 
         public void restart() {
@@ -150,6 +157,7 @@ namespace Flappy_Bord {
             // Function that starts game
             // The parameter should be your start scene
             game.set_resource_folder("resources");
+            game.set_asset_pack("main");
             game.run(new main());
         }
     }

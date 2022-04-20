@@ -9,7 +9,4 @@
       <HintPath>bin/Debug/net6.0/Fjord.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Fjord" Version="1.1.1"/>
-  </ItemGroup>
 </Project>

@@ -1,0 +1,9 @@
+[09:54:56] init -> SDL initialized without errors
+[09:54:56] init -> Window created without errors
+[09:54:57] init -> Renderer created without errors
+[09:54:57] load_langfile -> Couldn't find lang_file 'en_US' in asset_pack 'main' ignoring.
+[09:54:57] load_sound -> Sounds already contains id 'jump'!
+[09:54:57] load_sound -> Sounds already contains id 'die'!
+[09:54:57] load_sound -> Sounds already contains id 'point'!
+[09:54:57] load_scene -> Loaded scene 'game-template' successfully!
+[09:55:14] stop -> Game cleaned

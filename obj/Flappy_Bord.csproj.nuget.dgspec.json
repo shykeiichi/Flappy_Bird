@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj": {}
+    "D:\\Projects2022\\Coding\\C#\\Fjord_projects\\Flappy_Bird\\Flappy_Bord.csproj": {}
   },
   "projects": {
-    "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj": {
+    "D:\\Projects2022\\Coding\\C#\\Fjord_projects\\Flappy_Bird\\Flappy_Bord.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj",
+        "projectUniqueName": "D:\\Projects2022\\Coding\\C#\\Fjord_projects\\Flappy_Bird\\Flappy_Bord.csproj",
         "projectName": "Flappy_Bord",
-        "projectPath": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\Flappy_Bord.csproj",
+        "projectPath": "D:\\Projects2022\\Coding\\C#\\Fjord_projects\\Flappy_Bird\\Flappy_Bord.csproj",
         "packagesPath": "C:\\Users\\wille\\.nuget\\packages\\",
-        "outputPath": "e:\\Projects\\Coding\\C#\\Fjord_Projects\\Game_Test\\obj\\",
+        "outputPath": "D:\\Projects2022\\Coding\\C#\\Fjord_projects\\Flappy_Bird\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\wille\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,12 +43,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Fjord": {
-              "target": "Package",
-              "version": "[1.1.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

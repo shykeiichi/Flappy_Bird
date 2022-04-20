@@ -11,21 +11,21 @@ namespace Flappy_Bord {
     class bird_controller : component {
 
         float velocity = 0;
-        float gravity = 0.3f;
+        float gravity = 0.8f;
         float max = 30f;
 
         public override void on_load()
         {
-            parent.get_component<Sprite_Renderer>().texture = texture_handler.load_texture("bird.png");
-            parent.get_component<Transform>().position = new V2f(100, 101);
+            parent.get<Sprite_Renderer>().sprite.set_texture("bird.png");
+            parent.get<Transform>().position = new V2f(100, 101);
         }
 
         public override void update() {
             velocity += gravity;
 
             velocity = Math.Clamp(velocity, -max, max);
-
-            parent.get_component<Transform>().position.y += velocity * game.delta_time;
+            
+            parent.get<Transform>().position.y += velocity * game.delta_time;
 
             if(input.get_key_just_pressed(input.key_space)) {
                 velocity = -200;
